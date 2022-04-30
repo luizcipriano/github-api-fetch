@@ -9,9 +9,12 @@ async function puxarDados() {
     const user = dadosJSON.name;
     const loc = dadosJSON.location;
     const bio = dadosJSON.bio;
-    box.innerHTML = `<img src="${img}" alt=""> <p class="user">${user}</p> <p class="user">${bio}</p>  <p class="user">${loc}</p>`
+    if(img == undefined){
+     alert('Usuario não encontrado tente novamente');
+    } else {
+      box.innerHTML = `<img src="${img}" alt=""> <p class="user">${user}</p> <p class="user">${bio}</p>  <p class="user">${loc}</p>`
+    }
     
-    console.log(dadosJSON);
     // document.body.innerText = dadosJSON.titulo;
   }
   catch(erro) {
