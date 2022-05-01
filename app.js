@@ -1,5 +1,4 @@
 const box = document.querySelector('.box_user');
-
 async function puxarDados() {
   try {
     const name = document.querySelector('.name').value;
@@ -14,8 +13,6 @@ async function puxarDados() {
     } else {
       box.innerHTML = `<img src="${img}" alt=""> <p class="user">${user}</p> <p class="user">${bio}</p>  <p class="user">${loc}</p>`
     }
-    
-    // document.body.innerText = dadosJSON.titulo;
   }
   catch(erro) {
     console.log(erro);

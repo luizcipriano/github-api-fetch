@@ -1,5 +1,5 @@
 body{
-  background: #333;
+  background: #525252;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,6 +15,10 @@ body{
   align-items: center;
   padding: 2rem;
   text-align: center;
+  border-radius: 50px;
+  background: #525252;
+  box-shadow:  41px 41px 82px #464646,
+             -41px -41px 82px #5e5e5e;
   img{
     width: 200px;
     height: 200px;
@@ -28,7 +32,7 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 5rem;
   text-align: center;
   label{
     color: #fff;
@@ -36,14 +40,15 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   input{
-    background: #000;
+    background: #525252;
     color: #fff;
     border: none;
-    border-bottom: 1px solid #fff;
     height: 2rem;
     font-size: 1.5rem;
     padding: 1rem;
     border-radius: 30px;
+    box-shadow:  41px 41px 82px #464646,
+    -41px -41px 82px #5e5e5e;
     &:focus,&:target, &:focus-visible{
       outline: none;   
     }
@@ -52,10 +57,13 @@ body{
     width: 200px;
     padding: 1rem 1.5rem;
     font-size: 1.5rem;
-    background: #000;
+    background: #5e5e5e;
     color: #fff;
+    border: none;
     cursor: pointer;
     border-radius: 30px;
+    box-shadow:  41px 41px 82px #464646,
+    -41px -41px 82px #5e5e5e;
   }
 }
 .user{
