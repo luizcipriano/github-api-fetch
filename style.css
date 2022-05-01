@@ -57,6 +57,26 @@ body {
     cursor: pointer;
     border-radius: 30px;
     box-shadow: 41px 41px 82px #464646, -41px -41px 82px #5e5e5e; }
+  .buscar button {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer; }
+  .buscar button::after {
+    content: '';
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: -50%;
+    bottom: -50%;
+    width: 1.25em;
+    transform: translate3d(-825%, 0, 0) rotate(35deg); }
+  .buscar button:hover::after {
+    transition: transform 0.45s ease-in-out;
+    transform: translate3d(600%, 0, 0) rotate(35deg); }
 
 .user {
   font-size: 1.2rem;
